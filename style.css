@@ -1,0 +1,270 @@
+@layer base {
+  :root {
+    --black: #212121;
+    --bgblack: #121212;
+    --bgonhover: #2A2A2A;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+
+    
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: var(--mono);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgblack);
+    color: var(--white);
+    font-family: var(--sans);
+  }
+  .opacitylow {
+    opacity: 0.5;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@layer splash {
+  #splash {
+    position: fixed; top: 0; left: 0; z-index: 999;
+    width: 100vw; height: 100vh;
+    display: flex;
+    align-items: center; justify-content: center;
+    font-size: 24px;
+    color: #fff; background: #000;
+  }
+  
+  #splash.hide {
+    opacity: 0; visibility: hidden;
+    transition: all 1s;
+  }
+}
+
+@layer salute {
+  .salute img {
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+  .salute-content {
+    display: flex;
+    flex-direction: column wrap;
+    align-items: center;
+    justify-content: baseline;
+    gap: 3rem;
+    padding: 1rem 0 2rem 2rem;
+
+  }
+  .salute-content h1 {
+    font-size: 5rem;
+    font-family: var(--mono);
+    color: var(--white)
+  }
+
+  .salute-des {
+    display: flex;
+    flex-direction: row wrap;
+    gap: 1rem;
+  }
+}
+ 
+@layer nav {
+
+  .nav-top h3 {
+    margin-bottom: 5px;
+  }
+  .nav-top p {
+    margin-top: 0;
+    line-height: 1.2;
+  }
+
+
+  nav {
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: center;
+  }
+
+  nav img {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+}
+  nav img:hover {
+      border: 4px solid var(--white);
+      transform: scale(1.1);
+  }
+
+.navbar {
+    padding: 1rem 0 0 2rem;
+    background-color: var();
+  }
+}
+
+@layer languages {
+  .languages {
+    margin-left: 3rem;
+  }
+
+  .languages-content h3 {
+    margin-bottom: 5px;
+  }
+
+  .languages-content p {
+    margin-top: 0;
+    line-height: 1.2;
+  }
+
+  .languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0; 
+    margin-left: 4.5rem;
+  }
+
+  .languages-list .language {
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
+    margin-bottom: 0; 
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .language {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: start;
+    gap: 1rem;
+    padding: 1rem 0; 
+    border-radius: 1rem;
+  }
+
+  .language p {
+    margin: 0; 
+    display: flex;
+    align-items: center;
+  }
+
+  .language img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10%;
+  }
+
+  .language:hover {
+    background-color: var(--bgonhover);
+  }
+
+}
+
+@layer aboutme {
+  .about {
+    margin-top: 5rem;
+  }
+  .about h3 {
+    margin-left: 3rem;
+  }
+  .about-content {
+    margin: 0 3rem 0 3rem;
+    font-size: 1.3em;
+    padding-right: 2rem;
+    transition: all .2s ease-in-out;
+  }
+  .about-content:hover {
+    transform: scale(1.02);
+  }
+  .name {
+    font-family: var(--mono);
+    color: blueviolet;
+  }
+}
+
+@layer projects {
+  .projects {
+    margin-top: 5rem;
+  }
+  .projects h3 {
+    margin-left: 3rem;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: row wrap;
+    gap: 2rem;
+    margin-left: 3rem;
+  }
+  .project-list img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 10%;
+    border: 2px solid var(--white);
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+  }
+  .project-list img:hover {
+    border: 4px solid var(--white);
+    transform: scale(1.25);
+}
+}
+
+@layer contact {
+  .contact {
+    margin-top: 5rem;
+  }
+  .contact p {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--mono);
+  }
+  .contact h3 {
+    margin-left: 3rem;
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: row wrap;
+    gap: 2rem;
+    margin-left: 3rem;
+    justify-content: center;
+  }
+  .contact-content img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+  }
+  .contact-content img:hover {
+    border: 4px solid var(--white);
+    transform: scale(1.1);
+  }
+}
+
+@layer footer {
+  footer {
+    border-top: 1px solid var(--white);
+    margin-top: 5rem;
+    text-align: center;
+  }
+  footer h3 {
+    margin: 5rem 0 3rem 0;
+  }
+}
