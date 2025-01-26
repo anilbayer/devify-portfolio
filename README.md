@@ -1,5 +1,7 @@
 Spotify-Inspired Portfolio Website
 
+[LIVE DEMO]([url](https://anilbayer.github.io/devify-portfolio/))
+
 🎵 Overview
 
 This project is a portfolio website designed to resemble a Spotify profile page. It showcases my skills, projects, and journey as an aspiring software engineer in a visually engaging and user-friendly way. The design is heavily inspired by Spotify's sleek, modern layout and focuses on responsiveness and interactivity.
