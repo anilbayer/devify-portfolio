@@ -1,6 +1,6 @@
 Spotify-Inspired Portfolio Website
 
-[LIVE DEMO]([url](https://anilbayer.github.io/devify-portfolio/))
+LIVE DEMO: https://anilbayer.github.io/devify-portfolio/
 
 🎵 Overview
 
