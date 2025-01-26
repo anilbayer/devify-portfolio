@@ -34,11 +34,11 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/anilbayer/spotify-inspired-portfolio.git
+git clone https://github.com/anilbayer/devify-portfolio
 
 Navigate to the project directory:
 
-cd spotify-inspired-portfolio
+cd devify-portfolio
 
 Open the index.html file in your browser to view the website.
 
