@@ -116,7 +116,7 @@
 
 @layer languages {
   .languages {
-    margin-left: 3rem;
+    margin: 0 6rem 0 3rem;
   }
 
   .languages-content h3 {
